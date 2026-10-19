@@ -74,6 +74,91 @@ body{background:radial-gradient(circle at 8% 9%,#ffe4eb 0,transparent 29%),linea
 .sectionhead{margin-bottom:11px}
 .section{padding-bottom:13px}
 .section:after{display:none!important}
+</style><style id="diseno-rosa-prueba">
+/* Diseño romántico de prueba */
+:root {
+  --rosa: #fa4d86;
+  --rosa-oscuro: #cb315e;
+}
+
+/* Encabezado más compacto */
+.brand {
+  font-size: 21px;
+  padding: 11px 12px 6px;
+}
+.albumtitle {
+  padding: 9px 15px;
+}
+.albumtitle b {
+  font-size: 14px;
+}
+
+/* Tarjeta principal */
+.banner {
+  border-radius: 23px;
+  box-shadow: 0 7px 20px #d58b9a30;
+}
+.banner h1 {
+  color: var(--rosa-oscuro);
+}
+.progress {
+  border-radius: 99px;
+}
+.progress div {
+  background: var(--rosa);
+}
+
+/* Estadísticas */
+.summary > div {
+  border-radius: 19px;
+  padding: 15px 4px;
+  box-shadow: 0 4px 13px #d58b9a25;
+}
+.summary b {
+  font-size: 26px;
+}
+.summary > div:nth-child(1) b {
+  color: var(--rosa);
+}
+.summary > div:nth-child(2) b {
+  color: #74656b;
+}
+.summary > div:nth-child(3) b {
+  color: #e6a329;
+}
+
+/* Láminas conseguidas */
+.tile.owned .seal {
+  background: var(--rosa) !important;
+  color: white;
+}
+.tile.owned b {
+  color: white !important;
+}
+
+/* Repetidas: conservan el indicador azul */
+.bubble {
+  background: #2167e8;
+  color: white;
+  z-index: 3;
+}
+
+/* Buscador */
+.searchbar input {
+  border-radius: 18px;
+  border: 1px solid #f3c9d5;
+  box-shadow: 0 3px 12px #d58b9a18;
+}
+
+/* Menú inferior */
+.bottom {
+  background: #fff9fa;
+  border-top: 1px solid #f4d6de;
+}
+.bottom button.active {
+  color: #ed3972;
+  font-weight: 800;
+}
 </style></head><body><div id="welcomeOverlay" role="dialog" aria-modal="true" aria-label="Bienvenida para Fernanda" hidden><div class="welcomeCard"><div class="welcomeArt" role="img" aria-label="Snoopy y Woodstock en su casita"></div><div class="welcomeContent"><h2>¡Hola, Fernanda! 💛</h2><p>Este pequeño rincón de Snoopy fue creado especialmente para ti. 🐾</p><p>Espero que disfrutes cada lámina, cada página y cada pequeño momento completando tu colección.</p><p class="signature">Hecho con mucho amor, solo para ti. ❤️</p><button class="welcomeStart" id="welcomeStart">Comenzar mi colección ♥</button></div></div></div>
 <header><div class="brand">💛 El álbum de <span>Fernanda</span></div><div class="albumtitle"><b>Snoopy · Un año para recordar 🐾</b><div><button class="iconbtn" id="settingsTop" title="Ajustes">⋮</button></div></div><div class="tabs"><button class="active" data-filter="all">Todas</button><button data-filter="missing">Me faltan</button><button data-filter="duplicates">Repetidas</button></div></header>
 <main><div id="albumView" class="view active"><div class="banner"><small>UN AÑO PARA RECORDAR<span class="bannerYear">2026</span></small><h1>El álbum de<br>Fernanda 💛</h1><p id="percent">0% completado</p><div class="progress"><div id="bar"></div></div></div><div class="summary"><div><b id="have">0</b><small>Casillas marcadas</small></div><div><b id="missing">296</b><small>Casillas faltantes</small></div><div><b id="duplicates">0</b><small>Repetidas</small></div></div><div class="searchbar"><input id="search" inputmode="text" placeholder="⌕  Buscar figuritas" aria-label="Buscar láminas"><button id="sort" title="Orden ascendente o descendente">☷↟</button></div><div class="little-note">💛 Fernanda, cada lámina es un pequeño recuerdo 🐾</div><p class="collection-note">276 láminas físicas oficiales · 296 casillas individuales en esta plantilla</p><div id="sections"></div></div>
